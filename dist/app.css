@@ -1,4 +1,102 @@
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #57402d;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
 ul {
   list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #57402d;
+  font-weight: bold;
+}
+
+header {
+  height: 70px;
+}
+
+header .ms_top-bar {
+  padding: 10px 0;
+  border-bottom: 0.5px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .ms_top-bar .ms_logo {
+  width: 140px;
+  height: auto;
+}
+
+header .ms_top-bar .ms_logo img {
+  margin-left: 15px;
+}
+
+header .ms_top-bar .ms_menubar ul li {
+  margin-right: 25px;
+  display: inline-block;
+  color: #57402d;
+}
+
+header .ms_top-bar .ms_menubar ul li:last-child {
+  margin-right: 0;
+}
+
+header .ms_top-bar .ms_btn-large {
+  border: 1px solid #5b6fab;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5b6fab;
+}
+
+header .ms_top-bar .ms_btn-large a {
+  color: #2d4692;
+}
+
+header .ms_top-bar .ms_btn-large img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+header .ms_jumbotron {
+  margin: 40px 0;
+}
+
+header .ms_jumbotron .ms_jumbo-text p {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+@media all and (max-width: 768px) {
+  header .ms_top-bar {
+    display: none;
+  }
 }
 

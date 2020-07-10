@@ -1,3 +1,47 @@
+// layout
+
+.wrap {
+
+  width: 80%;
+  margin: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #57402d;
+}
+
+h1 {
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+
+}
 ul {
   list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+ul li {
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+}
+
+a {
+  text-decoration: none;
+  color: #57402d;
+  font-weight: bold;
 }

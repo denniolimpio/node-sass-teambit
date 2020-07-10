@@ -1,9 +1,98 @@
 
 header {
+  height: 70px;
 
-  .top-bar {
+  // top bar
+  .ms_top-bar {
 
-    @include float;
+    padding: 10px 0;
+    border-bottom: .5px solid #000;
+    // aggiunge display flex , wrap
+    @include flex-row;
 
+
+    // logo
+    .ms_logo  {
+
+      width: 140px;
+      height: auto;
+      // immmagine .logo
+
+      img {
+        margin-left: 15px;
+
+      }
+    }
+    //  fine logo
+
+// elenco menu
+
+
+
+  .ms_menubar {
+
+    ul li {
+      margin-right: 25px;
+      display: inline-block;
+      color: #57402d;
+    }
+
+    ul li:last-child {
+
+      margin-right: 0;
+
+    }
+
+
+  }
+  .ms_btn-large {
+    border: 1px solid #5b6fab;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5b6fab;
+
+    a {
+      color: #2d4692;
+
+
+    }
+    img {
+      width: 20px;
+      margin: 0 5px;
+    }
+  }
+
+
+  }
+  // fine top bar
+
+// inizio jumb
+  .ms_jumbotron {
+
+// aggiunge margin top e bottom ad ogni sezione
+    @include section;
+
+    .ms_jumbo-text {
+
+      p {
+        font-size: 22px;
+        line-height: 40px;
+      }
+
+
+    }
+
+    .ms_jumbo-image {
+
+
+    }
+
+  }
+
+  @media all and (max-width: 768px) {
+
+    .ms_top-bar {
+      display: none;
+    }
   }
 }

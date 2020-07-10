@@ -1,3 +1,21 @@
-@mixin float {
-  background-color: red;
+@mixin flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//
+// @mixin container80 {
+//
+//   width: 80%;
+//   margin: auto;
+//   border-bottom: 2px solid black;
+//
+// }
+
+@mixin section {
+
+
+  margin: 40px 0;
+
+
 }
