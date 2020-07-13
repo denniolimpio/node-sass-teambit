@@ -1,21 +1,56 @@
+
+// aggiunge il colore principale de brand
+
+
+
+
+
+// impaginazione
+
 @mixin flex-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-//
-// @mixin container80 {
-//
-//   width: 80%;
-//   margin: auto;
-//   border-bottom: 2px solid black;
-//
-// }
 
-@mixin section {
+@mixin section-white {
+
+  background-color: #fff;
+  padding: 0 70px;
+  margin-bottom: 30px;
 
 
-  margin: 40px 0;
+}
+
+@mixin section-primaryColor {
+
+  background-color: #fde7d2;
+  padding: 40px 70px;
 
 
+}
+@mixin clearfix {
+
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+
+  }
+  }
+
+
+@mixin float-left {
+
+  float: left;
+}
+
+@mixin float-right {
+
+  float: right;
+}
+
+@mixin nofloat {
+
+  float: none;
 }

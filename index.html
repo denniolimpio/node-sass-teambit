@@ -7,113 +7,193 @@
 
   <title>node-sass-teambit</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
   <link rel="stylesheet" href="dist/app.css">
-
-
 </head>
+
 <body>
 
-  <!-- inizio container -->
-  <div class="wrap">
+  <!-- inizio wrap container  -->
+  <div class="container">
+
 
     <!-- inizio header -->
     <header>
-      <!--  inizio barra superiore -->
-      <div class="ms_top-bar">
+      <!--  inizio barra di navigazione -->
+      <nav class="navigation-bar">
 
-        <!-- barra sinistra ( logo) -->
-        <div class="ms_logo">
+        <!--  inizio logo-->
+        <div class="nav-logo">
           <img src="img/logo.svg" alt="logo">
         </div>
-        <!-- fine barra sinistra ( logo) -->
+        <!--  fine  logo-->
 
-        <!-- barra destra (inizio menu )-->
-        <nav class="ms_menubar">
+        <!-- inizio menu -->
+        <div class="nav-menu">
+
           <ul>
             <li>
-              <a href="#"> Solution</a>
+              <a href="#"> Solutions</a>
               <i class="fas fa-chevron-down"></i>
             </li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li> <a href="#">Sign in</a></li>
-
-            <li class="ms_btn-large">
-              <a href="#"><img src="img/google-logo.svg" alt="">Sign up</a>
+            <li>
+              <a href="#"> Pricing</a>
             </li>
+            <li>
+              <a href="#"> Blog</a>
+            </li>
+            <li>
+              <a href="#"> Sign in</a>
+            </li>
+            <li>
+              <button class="btn-violet">
+                <img src="img/google-logo.svg" alt="google logo">
+                Sign up
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- fine menu -->
 
-              </ul>
-            </nav>
-            <!-- fine barra destra ( menu )-->
+        <!-- burger menu, per  dispositivi mobili -->
+        <div class="burger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- fine burger menu-->
+
+      </nav>
+      <!-- fine barra di navigazione  -->
+
+      <!-- jumbotron -->
+      <div class="jumbotron">
+        <div class="jumbo-left">
+
+          <!-- jumbo text -->
+          <div class="jumbo-text">
+            <h1> Understand, recognize and develop your people</h1>
+            <p>Teambit helps teams create a high performing culture with regular feedback</p>
           </div>
-          <!--  fine barra superiore -->
+          <!-- jumbo button -->
+          <div class="jumbo-btn">
 
-          <!-- inizio jumbotron -->
-          <div class="ms_jumbotron">
+            <!--  with google -->
+            <button class="btn-large">
+              <img src="img/google-logo.svg" alt=" google logo">
+              Sign up with Google
+            </button>
 
-            <div class="container-fluid">
-              <div class="row">
-                <!-- colonna sinistra, testo -->
-                <div class="col-lg-6 ms_teaser">
+            <span>or</span>
 
-                  <div class="ms_jumbo-text">
-                    <h1> Understand, recognize and develop your people</h1>
-
-                    <p> Teambit helps team create a high performing culture with regular feedback</p>
-                  </div>
-
-                  <div class="ms_btn">
-                    <button type="button" name="button">
-
-                      <a href="#">
-                        <i class="fab fa-google"></i> Sign up</a></li>
-
-                      </a>
-
-                    </button>
-                    <button type="button" name="button"> slack </button>
-
-                  </div>
-
-                </div>
-                <!-- fine  colonna sinistra, testo -->
-
-                <!--   colonna destrea, immagine -->
-
-                <div class="col-lg-6 ms_jumbo-image">
-                  <img src="img/illustration-main.jpg" alt="illustration-main">
-                </div>
-              </div>
-              <!--   colonna destrea, immagine -->
-
-            </div>
+            <!-- with slack -->
+            <button class="btn-large">
+              <img src="img/slack-logo.svg" alt=" slack logo">
+              Sign up with Slack
+            </button>
 
           </div>
-          <!-- fine jumbotron -->
+          <a href="#"> Or use your email address <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-        </header>
+        <div class="jumbo-right">
 
-        <!-- fine  header -->
-
-        <main>
-
-        </main>
-
-        <footer>
-
-        </footer>
-
-
+          <div class="jumbo-image">
+            <img src="img/illustration-main.jpg" alt="illustration">
+          </div>
+        </div>
       </div>
-      <!-- fine container -->
+      <!-- fine jumbotron -->
+
+    </header>
+    <!-- fine header -->
+    <!-- inizio main -->
+    <main>
+      <!-- inziio section comparison -->
+
+      <section class="comparison">
+        <!-- with traditional  -->
+        <div class="heading">
+          <h3> Traditional people processes lead to</h3>
+
+        </div>
+
+        <div class="illustration">
+          <div class="small-img">
+            <img src="img/hardcore.png" alt="hardcore">
+            <p>They are hardcore, formal and disconnected</p>
+          </div>
+
+          <div class="small-img">
+            <img src="img/nofeedback.png" alt="nofeed ">
+            <p>They don't encourage regular feedback</p>
+          </div>
+
+          <div class="small-img">
+            <img src="img/notsafe.png" alt="notsafe ">
+            <p>They don't make it safe to speak up</p>
+          </div>
+        </div>
+
+
+        <div class="large-img">
+
+          <img src="img/before.png" alt="before">
+
+        </div>
+
+        <hr>
+        <!-- fine with traditional  -->
+
+        <!-- modern comparison -->
+        <div class="heading">
+          <h3> It doesen't have to be like that. Teambit is a modern solution that teammates love.</h3>
+
+        </div>
+        <div class="illustration">
+          <div class="small-img">
+            <img src="img/lightweight.png" alt="lightweight">
+            <p>It's lightweight fun and interconnected</p>
+          </div>
+
+          <div class="small-img">
+            <img src="img/feedbacksuggestions.png" alt="feedbacksuggestions ">
+            <p>It encourages regular feedback with contextual requests</p>
+          </div>
+
+          <div class="small-img">
+            <img src="img/safe.png" alt="safe ">
+            <p>It creates a safe environment for dialog</p>
+          </div>
+        </div>
+
+
+        <div class="large-img">
+
+          <img src="img/after.png" alt="after">
+          <h3>Here is how it works</h3>
+
+        </div>
+        <!-- fine modern comparison -->
+
+      </section>
+      <!-- fine section comparison -->
+
+    </main>
+    <!-- fine main -->
+
+    <!-- inizio footer -->
+    <footer></footer>
+    <!-- fine footer -->
+
+  </div>
+  <!-- fine wrap container  -->
 
 
 
 
-    </body>
-    </html>
+
+</body>
+</html>

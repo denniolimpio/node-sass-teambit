@@ -1,12 +1,12 @@
-.wrap {
-  width: 80%;
-  margin: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
 
 body {
@@ -16,9 +16,15 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 75px;
+  line-height: 65px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 35px;
 }
 
 ul {
@@ -38,65 +44,226 @@ a {
   font-weight: bold;
 }
 
+hr {
+  background-color: black;
+  height: 3px;
+}
+
 header {
-  height: 70px;
+  background-color: #fff;
+  padding: 0 70px;
+  margin-bottom: 30px;
 }
 
-header .ms_top-bar {
+.navigation-bar {
   padding: 10px 0;
-  border-bottom: 0.5px solid #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #000;
 }
 
-header .ms_top-bar .ms_logo {
-  width: 140px;
-  height: auto;
+.navigation-bar::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
-header .ms_top-bar .ms_logo img {
-  margin-left: 15px;
+.navigation-bar .nav-logo {
+  float: left;
+  width: 25%;
+  line-height: 60px;
 }
 
-header .ms_top-bar .ms_menubar ul li {
-  margin-right: 25px;
+.navigation-bar .nav-logo img {
+  width: 120px;
+  vertical-align: middle;
+}
+
+.navigation-bar .nav-menu {
+  float: right;
+  width: 75%;
+  text-align: right;
+  line-height: 60px;
+}
+
+.navigation-bar .nav-menu ul li {
   display: inline-block;
-  color: #57402d;
+  padding-left: 30px;
 }
 
-header .ms_top-bar .ms_menubar ul li:last-child {
-  margin-right: 0;
+.navigation-bar .nav-menu ul li:first-child {
+  padding: 0;
 }
 
-header .ms_top-bar .ms_btn-large {
-  border: 1px solid #5b6fab;
-  padding: 10px;
-  border-radius: 10px;
+.navigation-bar .nav-menu .btn-violet {
+  padding: 13px 19px;
+  border: none;
+  border-radius: 5px;
   background-color: #5b6fab;
-}
-
-header .ms_top-bar .ms_btn-large a {
   color: #2d4692;
+  font-weight: bold;
 }
 
-header .ms_top-bar .ms_btn-large img {
+.navigation-bar .nav-menu .btn-violet:focus {
+  outline: none;
+}
+
+.navigation-bar .nav-menu .btn-violet:hover {
+  background-color: #2c4792;
+}
+
+.navigation-bar .nav-menu .btn-violet img {
   width: 20px;
-  margin: 0 5px;
+  vertical-align: middle;
 }
 
-header .ms_jumbotron {
-  margin: 40px 0;
+.burger {
+  display: none;
 }
 
-header .ms_jumbotron .ms_jumbo-text p {
-  font-size: 22px;
-  line-height: 40px;
+.jumbotron::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
-@media all and (max-width: 768px) {
-  header .ms_top-bar {
+.jumbotron .jumbo-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.jumbotron .jumbo-left a {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #000;
+}
+
+.jumbotron .jumbo-text {
+  margin-bottom: 35px;
+}
+
+.jumbotron .jumbo-text p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.jumbotron .jumbo-right {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.jumbotron .jumbo-image img {
+  min-height: 270px;
+}
+
+.jumbotron .btn-large {
+  background-color: #2d4692;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+}
+
+.jumbotron .btn-large img {
+  width: 17px;
+  vertical-align: middle;
+}
+
+.jumbotron .btn-large a {
+  color: #fff;
+  font-size: 11px;
+}
+
+.jumbotron .jumbo-btn {
+  margin-bottom: 15px;
+}
+
+.jumbotron .jumbo-btn button {
+  color: #fff;
+}
+
+@media all and (max-width: 953px) {
+  .nav-menu {
     display: none;
+  }
+
+  .burger {
+    float: right;
+    width: 75%;
+    text-align: right;
+    line-height: 60px;
+    display: block;
+  }
+
+  .burger i {
+    font-size: 20px;
+  }
+
+  .jumbotron .jumbo-left,
+  .jumbotron .jumbo-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.comparison {
+  background-color: #fde7d2;
+  padding: 40px 70px;
+  height: 100%;
+}
+
+.comparison::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.comparison .illustration {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.comparison .illustration::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.small-img {
+  float: left;
+  width: calc( 100% / 3);
+  height: 90px;
+}
+
+.small-img img {
+  width: auto;
+  margin: 15px 70px;
+  text-align: center;
+}
+
+.small-img p {
+  font-size: 12px;
+}
+
+.large-img {
+  text-align: center;
+}
+
+.large-img img {
+  margin: 120px;
+  width: 250px;
+}
+
+@media all and (max-width: 953px) {
+  .small-img {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+  }
+
+  .large-img {
+    margin: 100px 0;
   }
 }
 

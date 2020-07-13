@@ -1,0 +1,75 @@
+
+
+  .comparison {
+    @include clearfix;
+    @include section-primaryColor;
+    height: 100%;
+
+.illustration {
+  @include clearfix;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+  }
+
+
+.small-img {
+
+  @include float-left;
+  width: calc( 100% / 3);
+  height: 90px;
+
+  img {
+    width: auto;
+    margin:  15px 70px;
+    text-align: center;
+
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+
+}
+
+
+.large-img {
+  text-align: center;
+
+
+  img {
+    margin: 120px;
+
+  width: 250px;
+
+
+  }
+
+
+}
+
+
+
+  @media all and (max-width: 953px) {
+
+
+    .small-img {
+
+      @include nofloat;
+      width: 100%;
+      text-align: center;
+      margin: 100px 0;
+
+    }
+
+     .large-img {
+
+      margin: 100px 0;
+
+    }
+
+
+  }
